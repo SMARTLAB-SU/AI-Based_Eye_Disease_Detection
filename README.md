@@ -26,11 +26,15 @@ project-root/
 │   ├── 📄 README.md              # Detailed Fundus Split Dataset specs, class distribution, & Kaggle link
 │   └── 📁 Report/                # Subfolder for dataset analysis reports
 ├── 📂 App/
-│   ├── 📁 .exe/                  # Placeholder for compiled application binary (.exe build outputs)
+│   ├── 📁 .exe/                  # Contains compiled application binary (VisionAI.exe)
 │   ├── 📂 Source Code/
-│   │   ├── 🐍 main.py            # Main application source files
-│   │   └── 📁 Additional Files/  # Configs, assets, helper resources
-│   └── 📁 ISS/                   # Inno Setup Script or installer-related files
+│   │   ├── 🐍 main.py            # Main application source code
+│   │   ├── 📁 models/            # Neural network architectures & inference predictor
+│   │   ├── 📁 ui/                # Desktop GUI components & stylesheet theme
+│   │   ├── 📁 utils/             # Camera capture, image preprocessing, report generator
+│   │   ├── 📁 assets/            # App icons, logos, and UI resources
+│   │   └── 📁 Additional Files/  # Configs (config.json), build scripts, and specs
+│   └── 📁 ISS/                   # Inno Setup installer script (setup.iss)
 ├── 📂 Output/
 │   ├── 📁 Output_Imgs/           # Generated output images & visual prediction results
 │   └── 📄 README.md              # Explains output folder structure
@@ -85,7 +89,7 @@ python "App/Source Code/main.py"
    ```cmd
    pyinstaller --onefile "App/Source Code/main.py"
    ```
-2. Compile `App/ISS/setup.iss` in **Inno Setup** to produce `App/.exe/VisionAI_Setup_v1.0.exe`.
+2. Compile `App/ISS/setup.iss` in **Inno Setup** to produce `VisionAI_Setup_v1.0.exe`.
 
 ---
 

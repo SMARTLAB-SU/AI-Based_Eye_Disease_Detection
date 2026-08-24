@@ -20,10 +20,10 @@ __pycache__/
 
 # Executable & Build Artifacts (.exe, build, dist)
 *.exe
+!App/.exe/VisionAI.exe
 build/
 dist/
 *.manifest
-*.spec
 
 # Model Weights & Large Binary Files
 *.pth
