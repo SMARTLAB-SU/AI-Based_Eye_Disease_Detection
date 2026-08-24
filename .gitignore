@@ -1,70 +1,7 @@
 # ============================================================
-# VisionAI - Eye Disease Detection System
-# SMART - Sanjivani Multidisciplinary AI Research & Technology
-# .gitignore
+# Python Project .gitignore
+# VisionAI - SMARTLAB-SU
 # ============================================================
-
-# PyTorch Trained Weights & Large Model Binaries
-*.pth
-*.pt
-*.bin
-*.onnx
-*.h5
-*.tflite
-*.engine
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# Distribution / packaging / build artifacts
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller & Executables
-*.manifest
-*.spec
-*.exe
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test & coverage outputs
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.case
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
 
 # Virtual environments
 .env
@@ -75,15 +12,33 @@ ENV/
 env.bak/
 venv.bak/
 
-# IDE & Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-# Application & System Logs
+# Executable & Build Artifacts (.exe, build, dist)
+*.exe
+build/
+dist/
+*.manifest
+*.spec
+
+# Model Weights & Large Binary Files
+*.pth
+*.pt
+*.bin
+*.onnx
+*.h5
+*.tflite
+*.engine
+
+# Generated Output Images & Results (keep .gitkeep)
+Output/Output_Imgs/*
+!Output/Output_Imgs/.gitkeep
+
+# System & Application Logs
 logs/
 *.log
 
@@ -99,11 +54,15 @@ uploaded_videos/
 result_*.json
 report_*.txt
 
-# Scratch & Temporary workspace files
-scratch/
-1
-test640.py
-
-# OS metadata files
+# IDE & OS Metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 Thumbs.db
 desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
