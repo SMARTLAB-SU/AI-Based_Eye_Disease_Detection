@@ -3,9 +3,16 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
 [![PyQt GUI](https://img.shields.io/badge/PyQt-5%2F6-green.svg)](https://riverbankcomputing.com/software/pyqt/)
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Fundus%20Split%20Dataset-blue?style=flat&logo=kaggle)](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
 An advanced multi-architecture AI system for real-time detection and screening of ocular pathologies (Age-Related Macular Degeneration, Cataract, Dementia-related retinal biomarkers, Diabetic Retinopathy, Glaucoma, and Normal controls). Developed under **SMART** (*Sanjivani Multidisciplinary AI Research & Technology*).
+
+---
+
+## 📊 Dataset & Benchmark
+The model training and evaluation rely on the preprocessed **Fundus Split Dataset** available on Kaggle:
+👉 **[Kaggle Fundus Split Dataset by Bhadakwade Utkarsha](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)**
 
 ---
 
@@ -14,7 +21,7 @@ An advanced multi-architecture AI system for real-time detection and screening o
 ```
 project-root/
 ├── 📂 Dataset/
-│   ├── 📄 README.md              # Describes dataset source, format, and preprocessing steps
+│   ├── 📄 README.md              # Describes dataset source, Kaggle link, format, and preprocessing steps
 │   └── 📁 Report/                # Subfolder for dataset analysis reports
 ├── 📂 App/
 │   ├── 📁 .exe/                  # Placeholder for compiled application binary (.exe build outputs)

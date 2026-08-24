@@ -1,6 +1,9 @@
 # Dataset Overview & Preprocessing Guide
 
-## 1. Dataset Source
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Fundus%20Split%20Dataset-blue?style=flat&logo=kaggle)](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)
+
+## 1. Dataset Source & Download Link
+- **Kaggle Dataset**: [Fundus Split Dataset by Bhadakwade Utkarsha](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)
 - **Primary Source**: Multi-class ocular fundus image datasets (Ocular Disease Intelligent Recognition, Glaucoma & Diabetic Retinopathy public benchmarks).
 - **Disease Categories**: AMD, Cataract, Dementia (Retinal Microvascular Signs), Diabetic Retinopathy (Diabetes), Glaucoma, and Normal baseline controls.
 
