@@ -90,13 +90,19 @@ python "App/Source Code/main.py"
 
 ---
 
-## 🛠️ Building Standalone Installer (.exe)
+## 🛠️ Inno Setup Installer (.iss Script) & Building (.exe)
 
-1. Package the source code with PyInstaller:
+The repository includes a complete **Inno Setup** compilation script to generate a professional standalone Windows installer (`VisionAI_Setup_v1.0.exe`).
+
+- **Inno Setup Compiler Script**: **[App/ISS/setup.iss](App/ISS/setup.iss)** (GitHub Link: [setup.iss](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/blob/main/App/ISS/setup.iss))
+
+### Compilation Instructions:
+1. **Package Source Code** with PyInstaller:
    ```cmd
    pyinstaller --onefile "App/Source Code/main.py"
    ```
-2. Compile `App/ISS/setup.iss` in **Inno Setup** to produce `VisionAI_Setup_v1.0.exe`.
+2. **Compile Installer Script**:
+   Open **[App/ISS/setup.iss](App/ISS/setup.iss)** in **Inno Setup Compiler** (v6.0+) and click **Compile** to produce `VisionAI_Setup_v1.0.exe`.
 
 ---
 
