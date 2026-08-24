@@ -11,8 +11,10 @@ An advanced multi-architecture AI system for real-time detection and screening o
 ---
 
 ## 📊 Dataset & Benchmark
-The model training and evaluation rely on the preprocessed **Fundus Split Dataset** available on Kaggle:
+The model training and evaluation rely on the preprocessed **Fundus Split Dataset** available on Kaggle:  
 👉 **[Kaggle Fundus Split Dataset by Bhadakwade Utkarsha](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)**
+
+For comprehensive dataset details, class distribution tables, augmentation details, and cleanup scripts, see **[Dataset/README.md](file:///c:/Users/Asus/OneDrive/Documents/VisionAI/Dataset/README.md)**.
 
 ---
 
@@ -21,7 +23,7 @@ The model training and evaluation rely on the preprocessed **Fundus Split Datase
 ```
 project-root/
 ├── 📂 Dataset/
-│   ├── 📄 README.md              # Describes dataset source, Kaggle link, format, and preprocessing steps
+│   ├── 📄 README.md              # Detailed Fundus Split Dataset specs, class distribution, & Kaggle link
 │   └── 📁 Report/                # Subfolder for dataset analysis reports
 ├── 📂 App/
 │   ├── 📁 .exe/                  # Placeholder for compiled application binary (.exe build outputs)
