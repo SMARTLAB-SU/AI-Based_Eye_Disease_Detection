@@ -4,9 +4,16 @@
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
 [![PyQt GUI](https://img.shields.io/badge/PyQt-5%2F6-green.svg)](https://riverbankcomputing.com/software/pyqt/)
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Fundus%20Split%20Dataset-blue?style=flat&logo=kaggle)](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)
+[![Download .exe](https://img.shields.io/badge/Download-Standalone%20.exe-green?style=flat&logo=google-drive)](https://drive.google.com/file/d/1xaMlOsWCdlhos-P2b06rGy90uYbtYsTp/view?usp=drive_link)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
 An advanced multi-architecture AI system for real-time detection and screening of ocular pathologies (Age-Related Macular Degeneration, Cataract, Dementia-related retinal biomarkers, Diabetic Retinopathy, Glaucoma, and Normal controls). Developed under **SMART** (*Sanjivani Multidisciplinary AI Research & Technology*).
+
+---
+
+## 💾 Download Standalone Executable (.exe)
+You can download the pre-compiled standalone Windows application (`VisionAI.exe`) directly from Google Drive:  
+👉 **[Download VisionAI Executable (.exe) on Google Drive](https://drive.google.com/file/d/1xaMlOsWCdlhos-P2b06rGy90uYbtYsTp/view?usp=drive_link)**
 
 ---
 
