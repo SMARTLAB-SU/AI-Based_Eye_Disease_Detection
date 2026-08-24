@@ -1,0 +1,109 @@
+# ============================================================
+# VisionAI - Eye Disease Detection System
+# SMART - Sanjivani Multidisciplinary AI Research & Technology
+# .gitignore
+# ============================================================
+
+# PyTorch Trained Weights & Large Model Binaries
+*.pth
+*.pt
+*.bin
+*.onnx
+*.h5
+*.tflite
+*.engine
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging / build artifacts
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller & Executables
+*.manifest
+*.spec
+*.exe
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test & coverage outputs
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.case
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Application & System Logs
+logs/
+*.log
+
+# Patient Data & Private Information (HIPAA Privacy Compliance)
+VisionAI_Patients/
+PT-*/
+detected_images/
+original_images/
+recordings/
+snapshots/
+uploaded_videos/
+*.json
+result_*.json
+report_*.txt
+
+# Scratch & Temporary workspace files
+scratch/
+1
+test640.py
+
+# OS metadata files
+Thumbs.db
+desktop.ini
