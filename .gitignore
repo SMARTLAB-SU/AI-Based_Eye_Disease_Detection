@@ -34,9 +34,11 @@ dist/
 *.tflite
 *.engine
 
-# Generated Output Images & Results (keep .gitkeep)
+# Generated Output Images & Results (Track sample output screenshots)
 Output/Output_Imgs/*
 !Output/Output_Imgs/.gitkeep
+!Output/Output_Imgs/visionai_interface_idle.png
+!Output/Output_Imgs/visionai_detection_result.png
 
 # System & Application Logs
 logs/
