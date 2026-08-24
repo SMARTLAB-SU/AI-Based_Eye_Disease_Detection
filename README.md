@@ -43,6 +43,7 @@ project-root/
 ├── 📄 requirements.txt           # Python dependencies
 ├── 📄 README.md                   # Top-level project overview, setup, usage instructions
 └── 📂 Document/
+    ├── 📁 Comprehensive_Doc/     # Comprehensive Technical Document & User Manual
     └── 📁 PPT/                   # Presentation slides deck & slide outline
 ```
 
