@@ -42,6 +42,10 @@ Output/Output_Imgs/*
 !Output/Output_Imgs/.gitkeep
 !Output/Output_Imgs/visionai_interface_idle.png
 !Output/Output_Imgs/visionai_detection_result.png
+!Output/Output_Imgs/visionai_glaucoma_detection.png
+!Output/Output_Imgs/visionai_dementia_detection.png
+!Output/Output_Imgs/visionai_cataract_detection.png
+!Output/Output_Imgs/visionai_amd_detection.png
 
 # System & Application Logs
 logs/
