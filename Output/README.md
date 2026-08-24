@@ -8,10 +8,14 @@ This directory contains generated diagnostic output images, model prediction hea
 
 ```
 Output/
-├── 📂 Output_Imgs/                      # Generated visual prediction outputs & GUI screenshots
-│   ├── 🖼️ visionai_interface_idle.png  # Main desktop interface in ready state
-│   └── 🖼️ visionai_detection_result.png# Live AI fundus diagnosis result (Cataract 90.1%)
-└── 📄 README.md                         # Documentation of output formats & results
+├── 📂 Output_Imgs/                        # Generated visual prediction outputs & GUI screenshots
+│   ├── 🖼️ visionai_interface_idle.png    # Main desktop interface in ready state
+│   ├── 🖼️ visionai_glaucoma_detection.png # Glaucoma pathology detection (93.4% confidence)
+│   ├── 🖼️ visionai_dementia_detection.png # Dementia retinal biomarker detection (91.6% confidence)
+│   ├── 🖼️ visionai_cataract_detection.png # Cataract diagnostic detection (90.1% confidence)
+│   ├── 🖼️ visionai_amd_detection.png      # Age-Related Macular Degeneration (AMD) detection (94.3% confidence)
+│   └── 🖼️ visionai_detection_result.png   # Full clinical AI diagnosis view (Cataract 90.1%)
+└── 📄 README.md                           # Documentation of output formats & results
 ```
 
 ---
@@ -25,8 +29,36 @@ The primary clinical GUI featuring multi-model architecture selection (Swin Tran
 
 ---
 
-### 2. Live Fundus AI Pathology Detection Result
-Demonstration of real-time fundus photograph analysis. The AI system segments retinal features and computes multi-class probability scores (e.g., **Cataract 90.1%** confidence), updating the patient record and status panel dynamically.
+### 2. Glaucoma AI Detection Result (93.4% Confidence)
+Real-time fundus photograph analysis identifying ocular hypertension and optic disc cup-to-disc ratio changes consistent with Glaucoma.
+
+![VisionAI Glaucoma Detection Result](Output_Imgs/visionai_glaucoma_detection.png)
+
+---
+
+### 3. Dementia Retinal Biomarker Detection Result (91.6% Confidence)
+Detection of microvascular and structural retinal biomarkers indicative of neurodegenerative changes associated with Dementia.
+
+![VisionAI Dementia Detection Result](Output_Imgs/visionai_dementia_detection.png)
+
+---
+
+### 4. Cataract Diagnostic Detection Result (90.1% Confidence)
+Automated screening highlighting crystalline lens opacity and fundus blur characteristics corresponding to Cataract.
+
+![VisionAI Cataract Detection Result](Output_Imgs/visionai_cataract_detection.png)
+
+---
+
+### 5. Age-Related Macular Degeneration (AMD) Result (94.3% Confidence)
+Retinal fundus image classification detecting macular lesions and drusen deposits associated with AMD.
+
+![VisionAI AMD Detection Result](Output_Imgs/visionai_amd_detection.png)
+
+---
+
+### 6. Full Clinical AI Diagnosis View
+Demonstration of real-time fundus photograph analysis in the dual-pane workflow viewer. The AI system segments retinal features and computes multi-class probability scores, updating the patient record and status panel dynamically.
 
 ![VisionAI Detection Result](Output_Imgs/visionai_detection_result.png)
 
@@ -40,3 +72,4 @@ Demonstration of real-time fundus photograph analysis. The AI system segments re
 2. **Patient Records & Reports**:
    - Text reports summarizing top-3 class confidences and diagnostic metrics.
    - Structured JSON records (`result_YYYY-MM-DD.json`) for clinical EHR integration.
+
