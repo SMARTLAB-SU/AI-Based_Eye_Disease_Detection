@@ -25,6 +25,12 @@ For comprehensive dataset details, class distribution tables, augmentation detai
 
 ---
 
+## ⚙️ Inno Setup Installer Script (.iss)
+The standalone Windows installer compilation script (`setup.iss`) is available in the repository:  
+👉 **[Inno Setup Installer Script (App/ISS/setup.iss)](App/ISS/setup.iss)** *(GitHub link: [App/ISS/setup.iss on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/blob/main/App/ISS/setup.iss))*
+
+---
+
 ## 📁 Repository Structure
 
 ```
