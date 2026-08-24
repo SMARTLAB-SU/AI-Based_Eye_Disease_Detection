@@ -94,15 +94,7 @@ python Evaluation/inference.py --image sample.jpg --model weights/model.pth
 python "App/Source Code/main.py"
 ```
 
----
 
-## 🛠️ Building Standalone Installer (.exe)
-
-1. Package the source code with PyInstaller:
-   ```cmd
-   pyinstaller --onefile "App/Source Code/main.py"
-   ```
-2. Compile `App/ISS/setup.iss` in **Inno Setup** to produce `VisionAI_Setup_v1.0.exe`.
 
 ---
 
