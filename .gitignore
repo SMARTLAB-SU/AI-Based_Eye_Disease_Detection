@@ -18,9 +18,8 @@ __pycache__/
 *$py.class
 *.so
 
-# Executable & Build Artifacts (.exe, build, dist)
+# Executable & Build Artifacts (.exe binaries hosted on Google Drive)
 *.exe
-!App/.exe/VisionAI.exe
 build/
 dist/
 *.manifest
