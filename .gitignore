@@ -18,8 +18,10 @@ __pycache__/
 *$py.class
 *.so
 
-# Executable & Build Artifacts (.exe binaries hosted on Google Drive)
+# Executable Binaries (*.exe ignored, but track App/.exe/ README & directory)
 *.exe
+!App/.exe/
+!App/.exe/README.md
 build/
 dist/
 *.manifest
