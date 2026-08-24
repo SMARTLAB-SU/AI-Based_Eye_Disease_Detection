@@ -41,7 +41,9 @@ project-root/
 ├── 📂 Evaluation/
 │   └── 🐍 inference.py           # Script to run model inference/evaluation
 ├── 📄 requirements.txt           # Python dependencies
-└── 📄 README.md                   # Top-level project overview, setup, usage instructions
+├── 📄 README.md                   # Top-level project overview, setup, usage instructions
+└── 📂 Document/
+    └── 📁 PPT/                   # Presentation slides deck & slide outline
 ```
 
 ---
