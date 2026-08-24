@@ -28,6 +28,8 @@ dist/
 
 # Model Weights & Large Binary Files
 *.pth
+!Models/
+!Models/*.pth
 *.pt
 *.bin
 *.onnx

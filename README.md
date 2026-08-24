@@ -38,6 +38,12 @@ project-root/
 ├── 📂 Dataset/
 │   ├── 📄 README.md              # Detailed Fundus Split Dataset specs, class distribution, & Kaggle link
 │   └── 📁 Report/                # Subfolder for dataset analysis reports
+├── 📂 Models/                 # Trained neural network model weights (.pth files)
+│   ├── 🧠 swin_scratch_best.pth            # Swin Transformer weights (99.33% acc)
+│   ├── 🧠 efficientnetv2s_scratch_best.pth  # EfficientNetV2-S weights (94.63% acc)
+│   ├── 🧠 resnext50_scratch_best.pth        # ResNeXt50 weights (87.92% acc)
+│   ├── 🧠 fnet_scratch_best.pth             # FNet weights
+│   └── 🧠 perceiver_scratch_best.pth        # Perceiver IO weights
 ├── 📂 App/
 │   ├── 📁 .exe/                  # Contains compiled application binary (VisionAI.exe)
 │   ├── 📂 Source Code/
