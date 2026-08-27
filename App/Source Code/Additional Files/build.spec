@@ -7,8 +7,9 @@
 import os
 from PyInstaller.utils.hooks import collect_data_files, collect_submodules
 
-# ── Project Root ───────────────────────────────────────────
-ROOT = os.path.dirname(os.path.abspath(SPEC))
+# ── Project Root (App/Source Code) ────────────────────────
+SPEC_DIR = os.path.dirname(os.path.abspath(SPEC))
+ROOT = os.path.abspath(os.path.join(SPEC_DIR, "..")) if os.path.basename(SPEC_DIR) == "Additional Files" else SPEC_DIR
 
 # ── Collect timm and torch data ────────────────────────────
 timm_datas   = collect_data_files("timm")
