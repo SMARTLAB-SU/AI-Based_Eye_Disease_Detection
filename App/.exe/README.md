@@ -9,10 +9,11 @@
 - **How it works**: Self-contained executable with `_internal` and all runtime dependencies pre-packaged inside a single `.exe` file. Unpacks into temporary memory at launch and runs instantly without installation.
 - **Link**: 👉 **[Download VisionAI Standalone Executable (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Standalone.exe)**
 
-### 2. 📦 Windows Installer (`VisionAI_Setup_v1.0.0.exe`)
+### 2. 📦 Windows Installer (`VisionAI_Setup_v1.0.0.exe`) - **[RECOMMENDED FOR DESKTOP SHORTCUTS]**
 - **File Name**: `VisionAI_Setup_v1.0.0.exe` (built via Inno Setup [`App/ISS/setup.iss`](../ISS/setup.iss))
 - **Documentation & Download Folder**: [`App/Installer/README.md`](../Installer/README.md)
 - **How it works**: Automatic installer wizard. Automatically unpacks `_internal/`, PyTorch, OpenCV, PyQt DLLs, and model weights into `C:\Program Files\VisionAI\`, sets up registry paths, creates Desktop shortcuts, and launches the app directly.
+- **Link**: 👉 **[Download VisionAI Setup Installer (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)**
 
 ### 3. 📁 Portable ZIP Bundle (`VisionAI_v1.0_Portable.zip`)
 - **How it works**: Unzip `VisionAI_v1.0_Portable.zip` to any location on Windows and double-click `VisionAI.exe` or `Launch_VisionAI.bat`. Ensure `_internal/`, `Models/`, and `assets/` remain in the same folder.
