@@ -14,7 +14,7 @@ An advanced multi-architecture AI system for real-time detection and screening o
 ## 💾 Download Standalone Executable & Installer (.exe)
 You can download the pre-compiled Windows installer (`VisionAI_Setup_v1.0.0.exe`) or standalone package directly from Google Drive:  
 👉 **[Download VisionAI Setup (.exe) on Google Drive](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)**  
-*(For single-file standalone builds and build specifications, see **[App/.exe/README.md](App/.exe/README.md)**)*
+*(For standalone Windows installer documentation, see **[App/Installer/README.md](App/Installer/README.md)**; for single-file executable specs, see **[App/.exe/README.md](App/.exe/README.md)**)*
 
 ---
 
@@ -53,7 +53,8 @@ project-root/
 │   ├── 🧠 fnet_scratch_best.pth             # FNet weights
 │   └── 🧠 perceiver_scratch_best.pth        # Perceiver IO weights
 ├── 📂 App/
-│   ├── 📁 .exe/                  # Contains compiled application binary (VisionAI.exe)
+│   ├── 📁 .exe/                  # Standalone executable download & PyInstaller specs
+│   ├── 📁 Installer/             # Standalone Windows installer download & setup guide
 │   ├── 📂 Source Code/
 │   │   ├── 🐍 main.py            # Main application source code
 │   │   ├── 📁 models/            # Neural network architectures & inference predictor
