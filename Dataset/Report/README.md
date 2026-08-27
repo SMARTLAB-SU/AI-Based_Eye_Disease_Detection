@@ -1,10 +1,10 @@
 # Fundus Split Dataset - Analysis & Preprocessing Report
 
-[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Fundus%20Split%20Dataset-blue?style=flat&logo=kaggle)](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)
+[![Google Drive Dataset](https://img.shields.io/badge/Google%20Drive-Fundus%20Split%20Dataset-blue?style=flat&logo=google-drive)](https://drive.google.com/file/d/1wyRIKuoaXqGL9TvGiex1dO16UHqbs7F1/view?usp=sharing)
 
 A pre-split, class-balanced dataset of retinal fundus (eye) images for multi-class classification, covering six conditions: **AMD, Cataract, Dementia, Diabetes, Glaucoma,** and **Normal**.
 
-Direct Kaggle Link: **[Fundus Split Dataset by Bhadakwade Utkarsha](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)**
+Direct Google Drive Link: **[Fundus Split Dataset on Google Drive](https://drive.google.com/file/d/1wyRIKuoaXqGL9TvGiex1dO16UHqbs7F1/view?usp=sharing)**
 
 ---
 
