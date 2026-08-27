@@ -63,6 +63,9 @@ Name: "{userappdata}\{#MyAppName}\snapshots"; Permissions: everyone-full
 ; Main executable
 Source: "dist\VisionAI\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 
+; Launcher batch script (opens folder and launches app)
+Source: "..\Source Code\Launch_VisionAI.bat"; DestDir: "{app}"; Flags: ignoreversion skipifsourcedoesntexist
+
 ; All PyInstaller bundled files (includes weights)
 Source: "dist\VisionAI\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
@@ -73,11 +76,13 @@ Source: "assets\*"; DestDir: "{app}\assets"; Flags: ignoreversion recursesubdirs
 Source: "README.txt"; DestDir: "{app}"; Flags: ignoreversion isreadme skipifsourcedoesntexist
 
 [Icons]
-; Desktop shortcut
-Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\assets\smartlab_logo.ico"; Comment: "Eye Disease Detection System"; Tasks: desktopicon
+; Desktop shortcuts
+Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\assets\smartlab_logo.ico"; Comment: "Eye Disease Detection System App"; Tasks: desktopicon
+Name: "{autodesktop}\{#MyAppName} (Open Folder & App)"; Filename: "{app}\Launch_VisionAI.bat"; IconFilename: "{app}\assets\smartlab_logo.ico"; Comment: "Open VisionAI Folder & Launch App"; Tasks: desktopicon
 
 ; Start Menu shortcuts
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\assets\smartlab_logo.ico"; Comment: "Eye Disease Detection System"; Tasks: startmenuicon
+Name: "{group}\Open {#MyAppName} Folder & App"; Filename: "{app}\Launch_VisionAI.bat"; IconFilename: "{app}\assets\smartlab_logo.ico"; Comment: "Open VisionAI Folder & Launch App"; Tasks: startmenuicon
 Name: "{group}\Uninstall {#MyAppName}"; Filename: "{uninstallexe}"; Tasks: startmenuicon
 
 [Registry]
@@ -88,8 +93,9 @@ Root: HKLM; Subkey: "Software\SMART\{#MyAppName}"; ValueType: string; ValueName:
 Root: HKCU; Subkey: "Software\{#MyAppName}"; ValueType: string; ValueName: "PatientDataPath"; ValueData: "{userappdata}\{#MyAppName}\patients"; Flags: uninsdeletekey
 
 [Run]
-; Launch app after install
-Filename: "{app}\{#MyAppExeName}"; Description: "Launch {#MyAppName} now"; Flags: nowait postinstall skipifsilent
+; Launch options after install
+Filename: "{app}\{#MyAppExeName}"; Description: "Launch {#MyAppName} application"; Flags: nowait postinstall skipifsilent
+Filename: "explorer.exe"; Parameters: """{app}"""; Description: "Open {#MyAppName} installation folder"; Flags: nowait postinstall unchecked
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}\logs"
