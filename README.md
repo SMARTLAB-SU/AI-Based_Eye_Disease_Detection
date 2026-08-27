@@ -26,6 +26,13 @@ For comprehensive dataset details, class distribution tables, augmentation detai
 
 ---
 
+## 🎥 Output & Demonstration Video
+Watch the official real-time screening demonstration video of the **VisionAI Eye Disease Detection System**:  
+👉 **[Watch VisionAI Output Video Demonstration on Google Drive](https://drive.google.com/file/d/1i_NHpuDHJY7bcHjHUrK5iOLCYtxX1rgb/view?usp=drive_link)**  
+*(For detailed output screenshots and diagnostic visualizations, see **[Output/README.md](Output/README.md)**)*
+
+---
+
 ## ⚙️ Inno Setup Installer Script (.iss)
 The standalone Windows installer compilation script (`setup.iss`) is available in the repository:  
 👉 **[Inno Setup Installer Script (App/ISS/setup.iss)](App/ISS/setup.iss)** *(GitHub link: [App/ISS/setup.iss on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/blob/main/App/ISS/setup.iss))*
