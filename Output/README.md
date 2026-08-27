@@ -1,6 +1,15 @@
 # Output Directory Structure & Diagnostic Visualizations
 
-This directory contains generated diagnostic output images, model prediction heatmaps, real-time camera feed results, and clinical report previews produced by the **VisionAI Eye Disease Detection System**.
+[![Google Drive Video](https://img.shields.io/badge/Google%20Drive-Watch%20Demo%20Video-red?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1i_NHpuDHJY7bcHjHUrK5iOLCYtxX1rgb/view?usp=drive_link)
+
+This directory contains generated diagnostic output images, model prediction heatmaps, real-time camera feed results, video demonstrations, and clinical report previews produced by the **VisionAI Eye Disease Detection System**.
+
+---
+
+## 🎥 Output Demonstration Video
+
+Watch the complete real-time application demonstration, live fundus detection, and multi-model screening video:  
+👉 **[Watch VisionAI Output Demo Video on Google Drive](https://drive.google.com/file/d/1i_NHpuDHJY7bcHjHUrK5iOLCYtxX1rgb/view?usp=drive_link)**
 
 ---
 
