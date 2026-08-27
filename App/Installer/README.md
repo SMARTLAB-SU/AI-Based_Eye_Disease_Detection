@@ -1,11 +1,11 @@
 # VisionAI Standalone Windows Installer
 
-[![Download Windows Installer](https://img.shields.io/badge/Google%20Drive-Download%20VisionAI_Setup.exe-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)
+[![Download Windows Installer](https://img.shields.io/badge/GitHub-Download%20VisionAI_Setup.exe-2EA043?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)
 
 ## 📥 Direct Installer Download
-You can download the pre-compiled, standalone Windows installation wizard (`VisionAI_Setup_v1.0.0.exe`) directly from Google Drive:
+You can download the pre-compiled, standalone Windows installation wizard (`VisionAI_Setup_v1.0.0.exe`) directly from GitHub Releases:
 
-👉 **[Download VisionAI Setup (.exe) on Google Drive](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)**
+👉 **[Download VisionAI Setup (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)**
 
 ---
 
