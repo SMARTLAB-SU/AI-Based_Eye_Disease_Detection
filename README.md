@@ -11,11 +11,18 @@ An advanced multi-architecture AI system for real-time detection and screening o
 
 ---
 
-## 💾 Download Standalone Executable & Installer (.exe)
-You can download the pre-compiled Windows setup installer or standalone executable directly from GitHub Releases:  
-- 📦 **[Download Windows Setup Installer (`VisionAI_Setup_v1.0.0.exe`)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)** *(Installs VisionAI to PC and creates Desktop Shortcuts)*  
-- ⚡ **[Download Portable Standalone App (`VisionAI_Standalone.exe`)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Standalone.exe)** *(Instant run, no installation required)*  
-*(For standalone Windows installer documentation, see **[App/Installer/README.md](App/Installer/README.md)**; for single-file executable specs, see **[App/.exe/README.md](App/.exe/README.md)**)*
+## 💾 Download Standalone Executable & Windows Setup Installer (.exe)
+Choose between the step-by-step setup installer wizard or the instant portable executable:
+
+1. 📦 **Windows Setup Installer Wizard (`VisionAI_Setup_v1.0.0.exe`)**  
+   - 👉 **[Download Setup Installer (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)**  
+   - Launches interactive setup wizard, installs VisionAI to PC, and creates Desktop Shortcuts.  
+   - Documentation & Setup Guide: **[`App/Installer/README.md`](App/Installer/README.md)**
+
+2. ⚡ **Standalone Portable Executable (`VisionAI_Standalone.exe`)**  
+   - 👉 **[Download Standalone Executable (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Standalone.exe)**  
+   - Single-file portable package. Unpacks into memory and runs instantly without installation steps.  
+   - Documentation & Build Specifications: **[`App/.exe/README.md`](App/.exe/README.md)**
 
 ---
 
