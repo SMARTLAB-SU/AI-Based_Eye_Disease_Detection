@@ -6,7 +6,7 @@ rem build_windows.bat - Compiles PyInstaller and Inno Setup
 rem ============================================================
 
 echo ============================================================
-echo           Building VisionAI Windows Executable
+echo           Building VisionAI Windows Executables
 echo ============================================================
 
 rem 1. Check Python and install PyInstaller if missing
@@ -16,22 +16,33 @@ if %errorlevel% neq 0 (
     pip install pyinstaller
 )
 
-rem 2. Run PyInstaller
+rem 2. Run PyInstaller for Folder Bundle (for Inno Setup Installer)
 echo Cleaning old build artifacts...
 rmdir /s /q "build" 2>nul
 rmdir /s /q "dist" 2>nul
 echo Running PyInstaller with build.spec...
-python -m PyInstaller -y --clean --workpath "%LOCALAPPDATA%\Temp\VisionAI_build" build.spec
+python -m PyInstaller -y --clean --workpath "%LOCALAPPDATA%\Temp\VisionAI_build" "%~dp0build.spec"
 if %errorlevel% neq 0 (
-    echo Error: PyInstaller build failed!
+    echo Error: PyInstaller folder build failed!
     exit /b %errorlevel%
 )
-echo PyInstaller build completed successfully.
+echo PyInstaller folder build completed successfully.
+
+rem 3. Run PyInstaller for Single-File Executable
+echo Running PyInstaller with build_singlefile.spec...
+python -m PyInstaller -y --clean --workpath "%LOCALAPPDATA%\Temp\VisionAI_single_build" "%~dp0build_singlefile.spec"
+if %errorlevel% neq 0 (
+    echo Warning: Single-file build encountered an issue. Folder build remains available.
+) else (
+    echo PyInstaller single-file build completed successfully (dist\VisionAI_Standalone.exe).
+)
 
 echo Copying weight files to build directory...
-xcopy /e /i /y "weights" "dist\VisionAI\weights"
+if exist "..\..\Models" (
+    xcopy /e /i /y "..\..\Models" "dist\VisionAI\Models"
+)
 
-echo Copying VisionAI to Desktop...
+echo Copying VisionAI folder to Desktop...
 if exist "%USERPROFILE%\OneDrive\Desktop" (
     rmdir /s /q "%USERPROFILE%\OneDrive\Desktop\VisionAI" 2>nul
     xcopy /e /i /y "dist\VisionAI" "%USERPROFILE%\OneDrive\Desktop\VisionAI"
@@ -43,7 +54,7 @@ if exist "%USERPROFILE%\Desktop" (
     echo Desktop copy ready: %USERPROFILE%\Desktop\VisionAI\VisionAI.exe
 )
 
-rem 3. Build Inno Setup Installer
+rem 4. Build Inno Setup Installer
 echo Locating Inno Setup Compiler (ISCC.exe)...
 set "ISCC_PATH="
 if exist "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" set "ISCC_PATH=C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
@@ -52,13 +63,15 @@ if exist "C:\Program Files\Inno Setup 6\ISCC.exe" set "ISCC_PATH=C:\Program File
 if defined ISCC_PATH (
     echo Found Inno Setup at: "%ISCC_PATH%"
     echo Compiling installer package...
-    "%ISCC_PATH%" setup.iss
+    "%ISCC_PATH%" "%~dp0..\ISS\setup.iss"
 ) else (
     echo WARNING: Inno Setup compiler ISCC.exe not found.
-    echo Standalone executable is available at: dist\VisionAI\VisionAI.exe
+    echo Portable folder bundle is available at: dist\VisionAI\
+    echo Single-file executable is available at: dist\VisionAI_Standalone.exe
 )
 
 echo ============================================================
 echo Build successful!
-echo Standalone folder: dist\VisionAI\
+echo Portable folder bundle: dist\VisionAI\
+echo Single-file executable: dist\VisionAI_Standalone.exe
 echo ============================================================
