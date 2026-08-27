@@ -11,7 +11,7 @@ You can download the pre-compiled, standalone Windows installation wizard (`Visi
 
 ## ⚡ What Happens When You Run The Installer
 1. **Automated Setup**: Double-clicking `VisionAI_Setup_v1.0.0.exe` launches the step-by-step setup wizard.
-2. **Complete Dependency Bundling**: Automatically installs all required PyTorch runtime libraries, OpenCV vision drivers, PyQt6 GUI files, model weights, and assets into `{autopf}\VisionAI`.
+2. **Complete Dependency & `_internal/` Bundling**: Automatically installs all required PyTorch C++ binaries (`c10.dll`), Python runtime libraries, OpenCV vision drivers, PyQt6 GUI plugins, model weights (`Models/`), and assets into `{autopf}\VisionAI` (including the required `_internal/` subfolder).
 3. **Dual Launch Shortcuts**: Automatically creates Desktop & Start Menu shortcuts:
    - 🚀 **`VisionAI App`**: Launches the VisionAI application directly.
    - 📂 **`VisionAI (Open Folder & App)`**: Opens the installation folder in Windows File Explorer and launches the app simultaneously.
