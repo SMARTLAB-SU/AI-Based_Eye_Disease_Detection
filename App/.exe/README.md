@@ -1,6 +1,6 @@
 # VisionAI Executable & Installer Deployment Guide
 
-[![Google Drive Download](https://img.shields.io/badge/Google%20Drive-Download%20VisionAI.exe-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1xaMlOsWCdlhos-P2b06rGy90uYbtYsTp/view?usp=drive_link)
+[![Google Drive Download](https://img.shields.io/badge/Google%20Drive-Download%20VisionAI.exe-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)
 
 ## ⚠️ Why standard `VisionAI.exe` might not open on direct download
 If you download **only** `VisionAI.exe` without its accompanying dependency folders (`.dll` files, `Qt6` runtime, PyTorch C++ binaries, and `assets/`), the application will fail to launch due to missing runtime libraries.
@@ -14,7 +14,7 @@ To resolve this, we provide three build and distribution formats:
 ### 1. 📦 Windows Installer (`VisionAI_Setup_v1.0.0.exe`) - **[RECOMMENDED]**
 - **File Name**: `VisionAI_Setup_v1.0.0.exe` (built via Inno Setup [`App/ISS/setup.iss`](../ISS/setup.iss))
 - **How it works**: Automatic installer wizard. Installs all required PyTorch, OpenCV, and PyQt DLLs, sets up registry paths, creates Desktop & Start Menu shortcuts, and launches the app directly.
-- **Link**: 👉 **[Download VisionAI Setup (.exe) on Google Drive](https://drive.google.com/file/d/1xaMlOsWCdlhos-P2b06rGy90uYbtYsTp/view?usp=drive_link)**
+- **Link**: 👉 **[Download VisionAI Setup (.exe) on Google Drive](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)**
 
 ### 2. ⚡ Single-File Standalone Executable (`VisionAI_Standalone.exe`)
 - **File Name**: `VisionAI_Standalone.exe` (built via PyInstaller [`build_singlefile.spec`](../Source%20Code/Additional%20Files/build_singlefile.spec))
