@@ -934,10 +934,34 @@ class MainWindow(QMainWindow):
 
     # ── Model Changed ──────────────────────────────────────
     def _weights_dir(self) -> str:
+        candidates = []
         if getattr(sys, "frozen", False):
-            base_dir = os.path.dirname(sys.executable)
-            return os.path.join(base_dir, "weights")
-        return os.path.join(os.path.dirname(os.path.dirname(__file__)), "weights")
+            exe_dir = os.path.dirname(sys.executable)
+            mei_dir = getattr(sys, "_MEIPASS", exe_dir)
+            candidates.extend([
+                os.path.join(exe_dir, "Models"),
+                os.path.join(exe_dir, "models"),
+                os.path.join(exe_dir, "weights"),
+                os.path.join(mei_dir, "Models"),
+                os.path.join(mei_dir, "models"),
+                os.path.join(mei_dir, "weights"),
+                os.path.join(os.path.dirname(exe_dir), "Models"),
+                os.path.join(os.path.dirname(exe_dir), "models"),
+                os.path.join(os.path.dirname(exe_dir), "weights"),
+            ])
+        root_dir = os.path.dirname(os.path.dirname(__file__))
+        candidates.extend([
+            os.path.join(root_dir, "Models"),
+            os.path.join(root_dir, "models"),
+            os.path.join(root_dir, "weights"),
+            os.path.join(os.path.dirname(root_dir), "Models"),
+            os.path.join(os.path.dirname(root_dir), "models"),
+            os.path.join(os.path.dirname(root_dir), "weights"),
+        ])
+        for c in candidates:
+            if os.path.exists(c):
+                return c
+        return os.path.join(root_dir, "Models")
 
     def _on_model_changed(self, model_name: str):
         if not model_name or model_name not in MODEL_INFO:
