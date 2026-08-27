@@ -13,6 +13,7 @@ To resolve this, we provide three build and distribution formats:
 
 ### 1. 📦 Windows Installer (`VisionAI_Setup_v1.0.0.exe`) - **[RECOMMENDED]**
 - **File Name**: `VisionAI_Setup_v1.0.0.exe` (built via Inno Setup [`App/ISS/setup.iss`](../ISS/setup.iss))
+- **Documentation & Download Folder**: [`App/Installer/README.md`](../Installer/README.md)
 - **How it works**: Automatic installer wizard. Installs all required PyTorch, OpenCV, and PyQt DLLs, sets up registry paths, creates Desktop & Start Menu shortcuts, and launches the app directly.
 - **Link**: 👉 **[Download VisionAI Setup (.exe) on Google Drive](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)**
 
