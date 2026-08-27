@@ -16,7 +16,7 @@ if %errorlevel% neq 0 (
     pip install pyinstaller
 )
 
-rem 2. Run PyInstaller for Folder Bundle (for Inno Setup Installer)
+rem 2. Run PyInstaller for Folder Bundle (contains _internal folder)
 echo Cleaning old build artifacts...
 rmdir /s /q "build" 2>nul
 rmdir /s /q "dist" 2>nul
@@ -28,7 +28,7 @@ if %errorlevel% neq 0 (
 )
 echo PyInstaller folder build completed successfully.
 
-rem 3. Run PyInstaller for Single-File Executable
+rem 3. Run PyInstaller for Single-File Standalone Executable (bundles _internal inside .exe)
 echo Running PyInstaller with build_singlefile.spec...
 python -m PyInstaller -y --clean --workpath "%LOCALAPPDATA%\Temp\VisionAI_single_build" "%~dp0build_singlefile.spec"
 if %errorlevel% neq 0 (
@@ -37,10 +37,19 @@ if %errorlevel% neq 0 (
     echo PyInstaller single-file build completed successfully (dist\VisionAI_Standalone.exe).
 )
 
-echo Copying weight files to build directory...
+echo Copying weight files to build directories...
 if exist "..\..\Models" (
     xcopy /e /i /y "..\..\Models" "dist\VisionAI\Models"
+    xcopy /e /i /y "..\..\Models" "dist\VisionAI\_internal\Models"
 )
+
+echo Copying launcher batch script...
+if exist "..\Launch_VisionAI.bat" (
+    copy /y "..\Launch_VisionAI.bat" "dist\VisionAI\Launch_VisionAI.bat"
+)
+
+echo Creating Portable ZIP Archive with _internal folder...
+powershell -Command "Compress-Archive -Path 'dist\VisionAI\*' -DestinationPath 'dist\VisionAI_v1.0_Portable.zip' -Force"
 
 echo Copying VisionAI folder to Desktop...
 if exist "%USERPROFILE%\OneDrive\Desktop" (
@@ -54,7 +63,7 @@ if exist "%USERPROFILE%\Desktop" (
     echo Desktop copy ready: %USERPROFILE%\Desktop\VisionAI\VisionAI.exe
 )
 
-rem 4. Build Inno Setup Installer
+rem 4. Build Inno Setup Installer (packs _internal into setup.exe)
 echo Locating Inno Setup Compiler (ISCC.exe)...
 set "ISCC_PATH="
 if exist "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" set "ISCC_PATH=C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
@@ -66,12 +75,14 @@ if defined ISCC_PATH (
     "%ISCC_PATH%" "%~dp0..\ISS\setup.iss"
 ) else (
     echo WARNING: Inno Setup compiler ISCC.exe not found.
-    echo Portable folder bundle is available at: dist\VisionAI\
-    echo Single-file executable is available at: dist\VisionAI_Standalone.exe
+    echo Portable folder bundle (with _internal): dist\VisionAI\
+    echo Portable ZIP archive: dist\VisionAI_v1.0_Portable.zip
+    echo Single-file standalone executable: dist\VisionAI_Standalone.exe
 )
 
 echo ============================================================
 echo Build successful!
-echo Portable folder bundle: dist\VisionAI\
-echo Single-file executable: dist\VisionAI_Standalone.exe
+echo Portable folder: dist\VisionAI\ (Must keep _internal folder!)
+echo Portable ZIP archive: dist\VisionAI_v1.0_Portable.zip
+echo Single-file standalone: dist\VisionAI_Standalone.exe
 echo ============================================================
