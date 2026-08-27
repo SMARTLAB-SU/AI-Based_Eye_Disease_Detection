@@ -11,9 +11,10 @@ An advanced multi-architecture AI system for real-time detection and screening o
 
 ---
 
-## 💾 Download Standalone Executable (.exe)
-You can download the pre-compiled standalone Windows application (`VisionAI.exe`) directly from Google Drive:  
-👉 **[Download VisionAI Executable (.exe) on Google Drive](https://drive.google.com/file/d/1xaMlOsWCdlhos-P2b06rGy90uYbtYsTp/view?usp=drive_link)**
+## 💾 Download Standalone Executable & Installer (.exe)
+You can download the pre-compiled Windows installer (`VisionAI_Setup_v1.0.0.exe`) or standalone package directly from Google Drive:  
+👉 **[Download VisionAI Setup (.exe) on Google Drive](https://drive.google.com/file/d/1xaMlOsWCdlhos-P2b06rGy90uYbtYsTp/view?usp=drive_link)**  
+*(For single-file standalone builds and build specifications, see **[App/.exe/README.md](App/.exe/README.md)**)*
 
 ---
 
