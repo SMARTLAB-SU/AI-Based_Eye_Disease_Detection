@@ -2,15 +2,6 @@
 
 [![GitHub Release Download](https://img.shields.io/badge/GitHub-Download%20VisionAI_Standalone.exe-2EA043?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Standalone.exe)
 
-## ⚠️ Critical Requirement: The `_internal` Folder
-In modern PyInstaller builds (PyInstaller 6.0+), **all required Python libraries (`python3xx.dll`), PyTorch C++ binaries (`torch_python.dll`, `c10.dll`), OpenCV drivers (`cv2`), PyQt6 GUI plugins, and model weights are stored inside the `_internal/` subfolder**.
-
-- ❌ **If you move or copy `VisionAI.exe` without the adjacent `_internal/` folder**, the application will immediately fail to open with missing DLL / library errors.
-- ✅ **If using the folder version**, keep `VisionAI.exe` and `_internal/` in the same directory, or run `Launch_VisionAI.bat`.
-- ✅ **If distributing a single file**, download the **[Single-File Standalone Executable (`VisionAI_Standalone.exe`) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Standalone.exe)** where `_internal` is pre-packaged inside.
-
----
-
 ## 📥 Distribution Formats
 
 ### 1. ⚡ Single-File Standalone Executable (`VisionAI_Standalone.exe`) - **[RECOMMENDED]**
