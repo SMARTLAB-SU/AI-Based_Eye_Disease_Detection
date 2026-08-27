@@ -3,7 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
 [![PyQt GUI](https://img.shields.io/badge/PyQt-5%2F6-green.svg)](https://riverbankcomputing.com/software/pyqt/)
-[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Fundus%20Split%20Dataset-blue?style=flat&logo=kaggle)](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)
+[![Google Drive Dataset](https://img.shields.io/badge/Google%20Drive-Fundus%20Split%20Dataset-blue?style=flat&logo=google-drive)](https://drive.google.com/file/d/1wyRIKuoaXqGL9TvGiex1dO16UHqbs7F1/view?usp=sharing)
 [![Download .exe](https://img.shields.io/badge/Download-Standalone%20.exe-green?style=flat&logo=google-drive)](https://drive.google.com/file/d/1xaMlOsWCdlhos-P2b06rGy90uYbtYsTp/view?usp=drive_link)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
@@ -18,10 +18,10 @@ You can download the pre-compiled standalone Windows application (`VisionAI.exe`
 ---
 
 ## 📊 Dataset & Benchmark
-The model training and evaluation rely on the preprocessed **Fundus Split Dataset** available on Kaggle:  
-👉 **[Kaggle Fundus Split Dataset by Bhadakwade Utkarsha](https://www.kaggle.com/datasets/bhadakwadeutkarsha/fundus-split-dataset)**
+The model training and evaluation rely on the preprocessed **Fundus Split Dataset** available on Google Drive:  
+👉 **[Download Fundus Split Dataset on Google Drive](https://drive.google.com/file/d/1wyRIKuoaXqGL9TvGiex1dO16UHqbs7F1/view?usp=sharing)**
 
-For comprehensive dataset details, class distribution tables, augmentation details, and cleanup scripts, see **[Dataset/README.md](file:///c:/Users/Asus/OneDrive/Documents/VisionAI/Dataset/README.md)**.
+For comprehensive dataset details, class distribution tables, augmentation details, and cleanup scripts, see **[Dataset/Report/README.md](Dataset/Report/README.md)**.
 
 ---
 
@@ -36,7 +36,7 @@ The standalone Windows installer compilation script (`setup.iss`) is available i
 ```
 project-root/
 ├── 📂 Dataset/
-│   ├── 📄 README.md              # Detailed Fundus Split Dataset specs, class distribution, & Kaggle link
+│   ├── 📄 README.md              # Detailed Fundus Split Dataset specs, class distribution, & Google Drive link
 │   └── 📁 Report/                # Subfolder for dataset analysis reports
 ├── 📂 Models/                 # Trained neural network model weights (.pth files)
 │   ├── 🧠 swin_scratch_best.pth            # Swin Transformer weights (99.33% acc)
