@@ -75,6 +75,7 @@ hidden_imports += collect_submodules("torch")
 # ── Data Files ─────────────────────────────────────────────
 datas = [
     (os.path.join(ROOT, "assets"), "assets"),
+    (os.path.join(ROOT, "Launch_VisionAI.bat"), "."),
 ]
 datas += timm_datas
 datas += torch_datas
