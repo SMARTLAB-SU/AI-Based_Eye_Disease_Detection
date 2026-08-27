@@ -4,16 +4,16 @@
 [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org/)
 [![PyQt GUI](https://img.shields.io/badge/PyQt-5%2F6-green.svg)](https://riverbankcomputing.com/software/pyqt/)
 [![Google Drive Dataset](https://img.shields.io/badge/Google%20Drive-Fundus%20Split%20Dataset-blue?style=flat&logo=google-drive)](https://drive.google.com/file/d/1wyRIKuoaXqGL9TvGiex1dO16UHqbs7F1/view?usp=sharing)
-[![Download .exe](https://img.shields.io/badge/Download-Standalone%20.exe-green?style=flat&logo=google-drive)](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)
+[![Download .exe](https://img.shields.io/badge/Download-Standalone%20.exe-green?style=flat&logo=github)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Standalone.exe)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
 An advanced multi-architecture AI system for real-time detection and screening of ocular pathologies (Age-Related Macular Degeneration, Cataract, Dementia-related retinal biomarkers, Diabetic Retinopathy, Glaucoma, and Normal controls). Developed under **SMART** (*Sanjivani Multidisciplinary AI Research & Technology*).
 
 ---
 
-## 💾 Download Standalone Executable & Installer (.exe)
-You can download the pre-compiled Windows installer (`VisionAI_Setup_v1.0.0.exe`) or standalone package directly from Google Drive:  
-👉 **[Download VisionAI Setup (.exe) on Google Drive](https://drive.google.com/file/d/16Th-DtZp_cpYqrK4i-ykCmb9EuGfhXJ-/view?usp=drive_link)**  
+## 💾 Download Standalone Executable (.exe)
+You can download the pre-compiled standalone Windows application (`VisionAI_Standalone.exe`) directly from GitHub Releases:  
+👉 **[Download VisionAI Standalone Executable (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Standalone.exe)**  
 *(For standalone Windows installer documentation, see **[App/Installer/README.md](App/Installer/README.md)**; for single-file executable specs, see **[App/.exe/README.md](App/.exe/README.md)**)*
 
 ---
