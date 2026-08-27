@@ -4,7 +4,7 @@
 **Prepared by:** Utkarsha Sandip Bhadakwade  
 **Affiliation:** BTech Computer Science Engineering, Sanjivani College of Engineering  
 
-👉 **[Open Comprehensive Technical Document on Google Docs](https://docs.google.com/document/d/13xjcRQC-q0_Zfn4Xj0LLe38xXv7sa58B/edit?usp=drive_link&ouid=101955352870722335883&rtpof=true&sd=true)**
+👉 **[Open Comprehensive Technical Document on Google Docs](https://docs.google.com/document/d/1n4JdJjAnq2gnbnHKrd8bqDR_KmF6oF_d/edit?usp=drive_link&ouid=111372586196575578578&rtpof=true&sd=true)**
 
 ---
 
