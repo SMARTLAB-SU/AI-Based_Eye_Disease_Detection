@@ -1,19 +1,23 @@
-# VisionAI Standalone Windows Installer
+# VisionAI & HYPERLUMA Standalone Windows Installers
 
-[![Download Windows Installer](https://img.shields.io/badge/GitHub-Download%20VisionAI_Setup.exe-2EA043?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)
+[![Download HYPERLUMA Setup Installer](https://img.shields.io/badge/GitHub-Download%20HYPERLUMA_Setup%20(v2.0)-2EA043?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v2.0.0/HYPERLUMA_Setup_v2.0.0.exe)
+[![Download VisionAI Setup Installer](https://img.shields.io/badge/GitHub-Download%20VisionAI_Setup%20(v1.0)-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)
 
-## 📦 Direct Installer Download
-You can download the pre-compiled Windows installation wizard (`VisionAI_Setup_v1.0.0.exe`) directly from GitHub Releases:
+## 📦 Direct Installer Downloads
 
-👉 **[Download VisionAI Setup Installer (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)**
+### 1. 🌟 HYPERLUMA Windows Setup Wizard (Version 2.0.0)
+👉 **[Download HYPERLUMA Setup Installer (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v2.0.0/HYPERLUMA_Setup_v2.0.0.exe)**
+
+- **Installer File**: HYPERLUMA_Setup_v2.0.0.exe (~497 MB)
+- **Features**: Interactive setup wizard created via Inno Setup (App/ISS/hyperluma_setup.iss). Installs the application, neural model checkpoints, assets, and creates Desktop/Start Menu shortcuts.
+- **Components**: Includes the full Spectral Analysis, ROI extraction, and multi-model disease classification suite.
 
 ---
 
-## ⚡ What Happens When You Run The Installer
-1. **Interactive Setup Wizard**: Double-clicking `VisionAI_Setup_v1.0.0.exe` launches the step-by-step installation wizard on Windows.
-2. **Complete Automated Installation**: Automatically installs all required PyTorch C++ binaries, Python runtime libraries, OpenCV vision drivers, PyQt6 GUI plugins, model weights (`Models/`), and assets into `C:\Program Files\VisionAI\`.
-3. **Desktop Shortcuts**: Automatically creates Desktop & Start Menu shortcuts:
-   - 🚀 **`VisionAI App`**: Launches the VisionAI application directly from your Desktop.
-   - 📂 **`VisionAI (Open Folder & App)`**: Opens the installation folder in Windows File Explorer and launches the app simultaneously.
+### 2. ⚡ VisionAI Windows Setup Wizard (Version 1.0.0)
+👉 **[Download VisionAI Setup Installer (.exe) on GitHub](https://github.com/SMARTLAB-SU/AI-Based_Eye_Disease_Detection/releases/download/v1.0.0/VisionAI_Setup_v1.0.0.exe)**
 
-*(For the portable standalone single-file executable, see **[App/.exe/README.md](../.exe/README.md)**)*
+- **Installer File**: VisionAI_Setup_v1.0.0.exe (~306 MB)
+- **Features**: Interactive setup wizard created via Inno Setup (App/ISS/setup.iss). Installs the VisionAI v1.0.0 application and creates Desktop shortcuts.
+
+*(For the portable single-file executables, see **[App/.exe/README.md](../.exe/README.md)**)*
